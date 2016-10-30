@@ -3,13 +3,7 @@ var app = express();
 
 function greetingMsg(name,showtime) {
 	var today = new Date();
-	var msg = "";
-	if (name != null) {
-		msg = "Hello " + name + "! ";
-	}
-	else {
-		msg = "Hello! ";
-	}
+	var msg = (name != null) ? 'Hello ' + name + '! ' : 'Hello';
 	if (showtime) {
 		msg += " It is now " + today.toTimeString();
 	}
