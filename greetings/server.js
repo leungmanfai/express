@@ -1,7 +1,7 @@
-var express = require('express');
-var app = express();
+let express = require('express');
+let app = express();
 
-function greetingMsg(name,showtime) {
+const greetingMsg = (name,showtime) => {
 	var today = new Date();
 	var msg = (name != null) ? 'Hello ' + name + '! ' : 'Hello';
 	if (showtime) {
@@ -28,5 +28,5 @@ app.get('/greetings/sayHelloWithTime', function (req, res) {
 
 var server = app.listen(process.env.PORT || 8099, function () {
   var port = server.address().port;
-  console.log('Server listening at port %s', port);
+  console.log(`Server listening at port ${port}`);
 });
