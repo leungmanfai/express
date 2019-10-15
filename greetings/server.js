@@ -22,7 +22,7 @@ app.get('/greetings/sayHelloWithTime', (req,res) => {
   res.send(greetingMsg(req.query.name,true));
 });
 
-app.get('/*', (req,res) => {
+app.get('/*', (req,res) => {  // default route for anything else
   res.redirect('/greetings');
 })
 
