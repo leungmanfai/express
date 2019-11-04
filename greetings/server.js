@@ -1,5 +1,5 @@
-let express = require('express');
-let app = express();
+const express = require('express');
+const app = express();
 
 const greetingMsg = (name,showtime = false) => {
 	let today = new Date();
