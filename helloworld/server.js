@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
 
-// GET request
-// Pathname /
+// GET Request, Pathname '/'
 app.get('/', (req,res) => {
     res.send('Hello, world!');    
 })
