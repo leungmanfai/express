@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 
-app.use(express.static('public'));
+app.use(express.static('public'));  // folder for static contents
 app.use("/download",express.static('public/assets'));  // virtual path /download -> public/assets
 
 app.get('/',(req,res) => {
