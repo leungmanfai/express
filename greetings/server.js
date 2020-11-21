@@ -8,7 +8,7 @@ const greetingMsg = (name = null, includeTime = false) => {
     msg += `  It is now ${today.toTimeString()}`;
     msg = `<html><head><title>sayHello</title></head><body><H1>${msg}</H1></body><html>`;
   }
-  return (msg);
+  return(msg);
 }
 
 app.get('/', (req, res) => {
